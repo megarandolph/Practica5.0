@@ -169,6 +169,8 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\contactoController.cs" />
+    <Compile Include="Controllers\eventoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\integrantesGController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -252,9 +254,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -280,6 +279,19 @@
     <Content Include="Views\integrantesG\Details.cshtml" />
     <Content Include="Views\integrantesG\Edit.cshtml" />
     <Content Include="Views\integrantesG\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Agenda.cshtml" />
+    <Content Include="Views\contacto\Create.cshtml" />
+    <Content Include="Views\contacto\Delete.cshtml" />
+    <Content Include="Views\contacto\Details.cshtml" />
+    <Content Include="Views\contacto\Edit.cshtml" />
+    <Content Include="Views\contacto\Index.cshtml" />
+    <Content Include="Views\evento\Create.cshtml" />
+    <Content Include="Views\evento\Delete.cshtml" />
+    <Content Include="Views\evento\Details.cshtml" />
+    <Content Include="Views\evento\Edit.cshtml" />
+    <Content Include="Views\evento\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
