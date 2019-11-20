@@ -54,9 +54,9 @@ namespace practicacinco.cero
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "482791292444050",
+               appSecret: "a8aaef3a8f839d3612613f396050bf76");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
