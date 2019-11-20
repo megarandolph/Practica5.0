@@ -1,0 +1,70 @@
+﻿@model IEnumerable<practicacinco.cero.integrantesG>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Consulta de asignaturas en curso</h2>
+
+
+@using (Html.BeginForm())
+{
+
+    <p>
+        Integrantes del Grupo:<br />
+        <input name="radio1" type="radio" value="option1" id="option1" onClick="validate();"> Randolph Marte <br />
+        <input name="radio1" type="radio" value="option2" id="option2" onClick="validate();"> Abel Encarnacion <br />
+        <input type="hidden" id="nombre" name="nombre" value=".">
+
+        <input type="submit" value="Buscar" />
+    </p>
+
+
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.asignaturas)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.asignaturas)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.integrantesId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.integrantesId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.integrantesId })
+            </td>
+        </tr>
+    }
+
+</table>
+@section scripts
+{
+
+    <script>
+
+        function validate() {
+            if (document.getElementById("option1").checked == true) {
+                $('#nombre').val("Randolph")
+
+            }
+            else if (document.getElementById("option2").checked == true) {
+                $('#nombre').val("Abel")
+            }
+        }
+    </script>
+
+}
