@@ -222,6 +222,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="imagenes\WhatsApp Image 2019-11-20 at 7.55.40 PM.jpeg" />
+    <Content Include="imagenes\WhatsApp Image 2019-11-20 at 8.12.27 PM %281%29.jpeg" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
